@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get 'top' => 'homes#top' #[top]URLにアクセスされたら[homes]controllerの[top]アクションを
+  
+  #[top]URLにアクセスされたら[homes]controllerの[top]アクションを呼び出す
+  #----homes----
+  get 'top' => 'homes#top'
+  #----homes----
+  
+  #----books----
+  get 'books/new' => 'books#new'
+  get 'books/index' => 'books#index'
+  get 'books/show' => 'books#show'
+  get 'books/edit' => 'books#edit'
+  #----books----
+  
 end
