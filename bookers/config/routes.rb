@@ -3,12 +3,13 @@ Rails.application.routes.draw do
   
   #[top]URLにアクセスされたら[homes]controllerの[top]アクションを呼び出す
   #----homes----
-  get 'homes/top' => 'homes#top'
+  get '/top' => 'homes#top'
   
   #----homes----
   
   #----books----
   get 'books/new' => 'books#new'
+  post 'books' => 'books#create'
   get 'books/index' => 'books#index'
   get 'books/show' => 'books#show'
   get 'books/edit' => 'books#edit'
