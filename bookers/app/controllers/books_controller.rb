@@ -8,7 +8,9 @@ class BooksController < ApplicationController
     book.save
     redirect_to '/books/show'
   end
-  def index
+  
+  def index　#一覧画面表示
+    @books = Book.all #booksデーブルに保存されているすべてのデータを取得するインスタンス変数
   end 
   
   def show
