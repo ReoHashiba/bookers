@@ -7,9 +7,35 @@
   box-sizing: border-box;
 }
 
-form{
-  display: block;
+body{
+  margin: 33px;
+}
+.body_books{
+  margin: 17.420px 0;
+}
+.body_newbook{
+  margin: 16.185px 0;
 }
 label{
   display: block;
+}
+
+td{
+  padding: 1px 7px 5px;
+}
+th{
+  padding: 1px 5px 1px;
+}
+.title{
+  margin-bottom: 10px;
+}
+.text_field{
+  padding: 1px 2px;
+}
+.text_area{
+  padding: 2px;
+  
+}
+.btn{
+  padding: 1px 6px;
 }
