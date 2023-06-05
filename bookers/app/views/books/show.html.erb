@@ -1,10 +1,10 @@
 <body>
     <p class = "flash_msg"><%= flash[:notice] %></p>
     <p>   
-        <strong>Title: </strong><%= Book.find(params[:id]).title %>
+        <strong>Title: </strong><%= @book.title %>
     </p>
     <p>
-        <strong>Body: </strong><%= Book.find(params[:id]).body %>
+        <strong>Body: </strong><%= @book.body %>
     </p>
-    <%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", "/books/index" %>
+    <%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", "/books" %>
 </body>
