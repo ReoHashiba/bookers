@@ -19,11 +19,4 @@ ActiveRecord::Schema.define(version: 2023_06_03_095000) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "bools", force: :cascade do |t|
-    t.string "title"
-    t.string "body"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
 end
